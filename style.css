@@ -1,0 +1,155 @@
+/* Основные настройки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Вкладки */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #3A89FF;
+    width: 100%;
+}
+
+.tab-button {
+    background-color: #3A89FF;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.tab-button:hover {
+    background-color: #3A89FF;
+}
+
+.tab-content {
+    padding: 20px;
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.tab-content {
+    padding: 20px;
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center; /* Центрирование содержимого */
+}
+
+/* Фидбек по предметам */
+.subject-feedback {
+    margin: 20px 0;
+}
+
+.subject {
+    display: flex;                /* Добавляем flex для выравнивания в одной линии */
+    justify-content: space-between; /* Пространство между названием и смайликами */
+    align-items: center;           /* Вертикальное выравнивание по центру */
+    margin: 10px 0;
+    text-align: left;              /* Выравнивание названия предмета слева */
+}
+
+/* Смайлики */
+.subject img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.subject img:hover {
+    transform: scale(1.1);
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: center;  /* Центрирование смайликов */
+    margin-bottom: 20px;
+}
+
+.emoji-container img {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease;
+}
+
+.emoji-container img:hover {
+    transform: scale(1.2);
+}
+
+/* Кнопки */
+button {
+    background-color: #3A89FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3A89FF;
+}
+
+.submit-button {
+    display: block;                  /* Делаем кнопку блочным элементом */
+    margin: 20px auto;              /* Центрируем с помощью автоматических отступов по бокам */
+    padding: 10px 20px;             /* Параметры отступов внутри кнопки */
+    background-color: #3A89FF;      /* Цвет фона кнопки */
+    color: white;                    /* Цвет текста */
+    border: none;                    /* Убираем рамку */
+    cursor: pointer;                 /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.submit-button:hover {
+    background-color: #3A89FF;       /* Цвет фона при наведении */
+}
+
+/* Центрирование заголовков */
+h1, h2 {
+    text-align: center;
+}
+
+/* Поля ввода */
+input[type="text"], button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Сообщения */
+#status-message {
+    display: none;
+    color: red;
+    text-align: center;
+}

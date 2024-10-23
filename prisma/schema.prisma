@@ -1,0 +1,19 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Feedback {
+  id                          Int      @id @default(autoincrement())
+  name                        String
+  andmebaasid                 Int
+  hajusrakenduste_alused       Int
+  matemaatika                 Int
+  eesti_keel                  Int
+  tarkvaraarenduse_meetodid    Int
+  hajusrakenduste_alused_2     Int
+}

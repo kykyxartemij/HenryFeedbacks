@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Database</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <nav>
+        <button id="feedback-tab" onclick="showTab('feedback')">Feedback</button>
+        <button id="database-tab" onclick="showTab('database')">Database</button>
+    </nav>
+
+    <!-- Feedback Tab -->
+    <div id="feedback" class="tab-content">
+        <h1>Feedback</h1>
+        <input type="text" id="name-input" placeholder="Your Name">
+        <div id="feedback-container"></div>
+        <button class="submit-button" onclick="submitFeedback()">Submit</button>
+    </div>
+
+    <!-- Database Tab -->
+    <div id="database" class="tab-content" style="display: none;">
+        <!-- Database will be changed to show the average statistics from database  -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- Color 3A89FF -->
