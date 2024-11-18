@@ -1,5 +1,0 @@
-1.00v site with 2 pages, fisrt for collecting feedbacks, second for showing feedbacks. Feedbacks collecting in feedbacks.txt 26.09.24
-
-1.01v adding database using mysql and prisma.orm. The database page non functional 03.10.24
-
-1.02v clearing code for future update. page Database is blank now 23.10.24
