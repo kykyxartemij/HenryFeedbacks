@@ -12,7 +12,6 @@ function showTab(tabName) {
   } else if (tabName === 'database') {
     feedbackTab.style.display = 'none';
     databaseTab.style.display = 'block';
-    loadFeedbacks();  // Load database data when switching to the database tab
   }
 }
 

@@ -71,3 +71,26 @@ app.listen(port, async () => {
     console.error('Ошибка при добавлении тестового фидбека:', error);
   }
 });
+
+// Маршрут для получения средней оценки по всем предметам
+app.get('/average-feedback', async (req, res) => {
+  try {
+    const feedbacks = await prisma.feedback.findMany();
+
+    // Предположим, что у нас есть следующие поля в базе данных:
+    const subjects = ['andmebaasid', 'hajusrakenduste_alused', 'matemaatika', 'eesti_keel', 'tarkvaraarenduse_meetodid', 'hajusrakenduste_alused_2'];
+
+    const averages = {};
+
+    subjects.forEach(subject => {
+      const totalScore = feedbacks.reduce((acc, feedback) => acc + (feedback[subject] || 0), 0);
+      const count = feedbacks.filter(feedback => feedback[subject] !== null).length;
+      averages[subject] = count ? totalScore / count : 0; // Избегаем деления на ноль
+    });
+
+    res.json(averages);
+  } catch (err) {
+    console.error('Ошибка при получении средней оценки:', err);
+    res.status(500).send('Ошибка при получении средней оценки');
+  }
+});
