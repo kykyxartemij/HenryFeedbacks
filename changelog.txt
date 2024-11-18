@@ -1,0 +1,7 @@
+26.09.24 site with 2 pages, fisrt for collecting feedbacks, second for showing feedbacks. Feedbacks collecting in feedbacks.txt 
+
+03.10.24 adding database using mysql and prisma.orm. The database page non functional 
+
+23.10.24 clearing code for future update. page Database is blank now 
+
+18.11.24 Complete work. Feedbacks saves at Database (table: feedback) and show average score at page Database. Bad design.
