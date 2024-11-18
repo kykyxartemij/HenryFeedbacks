@@ -1,1 +1,0 @@
-CREATE DATABASE feedbacks_db;
